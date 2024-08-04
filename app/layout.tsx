@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 
-import '@/app/globals.css';
 import { ThemeProvider } from '@/components/themeProvider';
 import ThemeChanger from '@/components/themeChanger';
 import { siteConfig } from '@/config/site';
+import '@/app/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Rubik({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteConfig.url}`),
@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.author, url: siteConfig.url }],
   creator: siteConfig.author,
   publisher: siteConfig.author,
-  keywords: ['computer science', 'mathematics', 'blog', 'school'],
   openGraph: {
     title: {
       template: `%s | ${siteConfig.name}`,

@@ -35,15 +35,14 @@ export default function Page({ params }: { params: { slug: string } }) {
       <p>
         <Link href="/">Home</Link>
       </p>
+      <p>
+        {format(post.meta.date, 'PP')}
+      </p>
       <h1>
         {post.meta.title}
       </h1>
       <p className="text-muted-foreground">
         {post.meta.description}
-      </p>
-      <hr/>
-      <p>
-        {format(post.meta.date, 'PP')}
       </p>
       <MDXRemote source={post.content} options={options} components={components}/>
     </main>
