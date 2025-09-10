@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site';
 import { getPost, getPostSlugs } from '@/lib/queries';
-import me from '@/public/images/me.jpg';
+import me from '@/public/images/me.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
